@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luna Boutique</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f7;
+        }
+
+               header {
+            background-color: #7b2948;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+                nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+               .welcome {
+            text-align: center;
+            padding: 45px 20px;
+            background-color: #f8dce5;
+        }
+
+        .welcome h2 {
+            color: #7b2948;
+            font-size: 30px;
+        }
+
+               .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #dddddd;
+        }
+
+        .product img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #7b2948;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b52e61;
+        }
+
+        .buy {
+            background-color: #7b2948;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+               .about {
+            text-align: center;
+            padding: 30px;
+        }
+
+               footer {
+            background-color: #7b2948;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+                @media (max-width: 900px) {
+            .product-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+                @media (max-width: 600px) {
+
+            header {
+                padding: 15px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .welcome h2 {
+                font-size: 23px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .product img {
+                height: 250px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Luna Boutique</h1>
+        <p>Style That Speaks For You!</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="welcome" id="home">
+        <h2>Discover Your Style!</h2>
+        <p>Trendy outfits for every occasion.</p>
+    </section>
+
+    <section id="collection">
+
+        <h2 style="text-align:center;">Our Collection</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500"
+                     alt="Pink dress">
+                <h3>Elegant Dress</h3>
+                <p class="price">₹1,499</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500"
+                     alt="Women's fashion outfit">
+                <h3>Casual Outfit</h3>
+                <p class="price">₹999</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500"
+                     alt="Fashion jacket">
+                <h3>Stylish Jacket</h3>
+                <p class="price">₹1,799</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500"
+                     alt="Women's fashion dress">
+                <h3>Party Wear</h3>
+                <p class="price">₹1,899</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFR7pB89KuzHY-y9_8P-LiZYcVCJe5YmMSFHdTl06WLQ&s=10"
+                     alt="Women's top">
+                <h3>Trendy Top</h3>
+                <p class="price">₹699</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500"
+                     alt="Fashion clothing">
+                <h3>Fashion Wear</h3>
+                <p class="price">₹1,299</p>
+                <button class="buy">Shop Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Luna Boutique</h2>
+        <p>
+            We bring you beautiful and trendy outfits
+            that make every moment special.
+        </p>
+    </section>
+
+    <section class="about" id="contact">
+        <h2>Contact Us</h2>
+        <p>Chennai, Tamil Nadu</p>
+        <p>Email: lunaboutique@gmail.com</p>
+        <p>Phone: 9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Luna Boutique. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
